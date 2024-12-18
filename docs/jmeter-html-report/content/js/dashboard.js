@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 30, 30, 100.0, 14.899999999999999, 0, 156, 1.0, 120.00000000000028, 145.0, 156.0, 0.5183585313174945, 1.1475769438444925, 0.0], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["investments-1-TPS", 30, 30, 100.0, 14.899999999999999, 0, 156, 1.0, 120.00000000000028, 145.0, 156.0, 0.5183585313174945, 1.1475769438444925, 0.0], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 30, 30, 100.0, 141.4333333333333, 107, 588, 118.0, 178.3000000000001, 409.2499999999998, 588.0, 0.517393028991256, 0.48278226484486836, 0.22231731714468034], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["investments-1-TPS", 30, 30, 100.0, 141.4333333333333, 107, 588, 118.0, 178.3000000000001, 409.2499999999998, 588.0, 0.517393028991256, 0.48278226484486836, 0.22231731714468034], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["Non HTTP response code: java.net.UnknownHostException/Non HTTP response message: api.testing.mercap.com.ar: Name does not resolve", 5, 16.666666666666668, 16.666666666666668], "isController": false}, {"data": ["Non HTTP response code: java.net.UnknownHostException/Non HTTP response message: api.testing.mercap.com.ar", 25, 83.33333333333333, 83.33333333333333], "isController": false}]}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["521", 30, 100.0, 100.0], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 30, 30, "Non HTTP response code: java.net.UnknownHostException/Non HTTP response message: api.testing.mercap.com.ar", 25, "Non HTTP response code: java.net.UnknownHostException/Non HTTP response message: api.testing.mercap.com.ar: Name does not resolve", 5, "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["investments-1-TPS", 30, 30, "Non HTTP response code: java.net.UnknownHostException/Non HTTP response message: api.testing.mercap.com.ar", 25, "Non HTTP response code: java.net.UnknownHostException/Non HTTP response message: api.testing.mercap.com.ar: Name does not resolve", 5, "", "", "", "", "", ""], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 30, 30, "521", 30, "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["investments-1-TPS", 30, 30, "521", 30, "", "", "", "", "", "", "", ""], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
