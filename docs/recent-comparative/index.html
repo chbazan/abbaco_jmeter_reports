@@ -1,0 +1,46 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comparativa contra la Métrica más Reciente</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    </head>
+    <body>
+        <h1>Comparativa contra la Métrica más Reciente</h1>
+        <table border="1" class="dataframe display" id="tabla_individual_comparacion">
+  <thead>
+    <tr style="text-align: right;">
+      <th>URL</th>
+      <th>Percentil 95 (ms) anterior</th>
+      <th>Percentil 95 (ms) actual</th>
+      <th>% de mejora/empeora entre ambos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://api.testing.mercap.com.ar/investments/</td>
+      <td>151.55</td>
+      <td>138.9</td>
+      <td>8.35</td>
+    </tr>
+  </tbody>
+</table>
+        <script>
+            $(document).ready(function() {
+                $('#tabla_individual_comparacion').DataTable({
+                    "paging": true,            
+                    "ordering": true,          
+                    "info": true,              
+                    "searching": true,         
+                    "pageLength": 10,          
+                    "lengthMenu": [5, 10, 25, 50, 100]  
+                });
+            });
+        </script>
+    </body>
+    </html>
+    
