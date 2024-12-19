@@ -1,0 +1,25 @@
+URL,Percentil 95 (ms) histórico,Percentil 95 (ms) actual,% de mejora/empeora entre ambos
+https://api.testing.mercap.com.ar/appraiser,199.0,112.0,43.72
+https://api.testing.mercap.com.ar/bond-laws,1115.0,111.65,89.99
+https://api.testing.mercap.com.ar/bond-payment-forecast,197.0,121.6,38.27
+https://api.testing.mercap.com.ar/bond-screener,1192.0,112.1,90.6
+https://api.testing.mercap.com.ar/bonds/ecfe885d-8163-4222-acb1-f7020cf05a4a,240.0,120.95,49.6
+https://api.testing.mercap.com.ar/bonds/ecfe885d-8163-4222-acb1-f7020cf05a4a/coupons,1163.95,122.0,89.52
+https://api.testing.mercap.com.ar/bonds/ecfe885d-8163-4222-acb1-f7020cf05a4a/issue-conditions,877.4,121.0,86.21
+https://api.testing.mercap.com.ar/bonds/ecfe885d-8163-4222-acb1-f7020cf05a4a/payment-summary,1190.2,119.0,90.0
+https://api.testing.mercap.com.ar/currencies,1126.0,129.3,88.52
+https://api.testing.mercap.com.ar/currencies/e852e30f-42ad-4343-a7f6-3bc4ec840ed1,876.0,123.35,85.92
+https://api.testing.mercap.com.ar/debt-types,1110.3,117.5,89.42
+https://api.testing.mercap.com.ar/instrument-issuers,5659.8,121.55,97.85
+https://api.testing.mercap.com.ar/investments/,199.0,116.0,41.71
+https://api.testing.mercap.com.ar/investments/1/exchange-rate-sensitivity?scenarios=4&step=4,191.3,124.6,34.87
+https://api.testing.mercap.com.ar/investments/1/irr-sensitivity?scenarios=4&step=4,190.0,125.0,34.21
+https://api.testing.mercap.com.ar/investments/1/metrics,201.0,115.75,42.41
+https://api.testing.mercap.com.ar/investments/1/price-sensitivity?scenarios=2&step=1660,193.65,132.1,31.78
+https://api.testing.mercap.com.ar/markets/4caa715b-06cb-428f-ac4c-f40a872a1064,866.0,121.85,85.93
+https://api.testing.mercap.com.ar/tradable-securities/?tradeDate=2024-12-19&type=bond&limit=10&query=al30,133.0,113.0,15.04
+https://api.testing.mercap.com.ar/tradable-securities/a899832b-3151-4305-bed3-00f2ed9e2981,884.0,116.0,86.88
+https://api.testing.mercap.com.ar/tradable-securities/a899832b-3151-4305-bed3-00f2ed9e2981/metrics,111.0,115.0,-3.6
+https://api.testing.mercap.com.ar/yield-curves,1409.1,115.9,91.77
+https://api.testing.mercap.com.ar/yield-curves/592b2907-1322-490b-88e9-b4b8f9eb3560,1071.0,113.0,89.45
+https://api.testing.mercap.com.ar/yield-curves/592b2907-1322-490b-88e9-b4b8f9eb3560/metrics,899.0,113.0,87.43
