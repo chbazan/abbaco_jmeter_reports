@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 86.9047619047619, "KoPercent": 13.095238095238095};
+    var data = {"OkPercent": 100.0, "KoPercent": 0.0};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.0, 500, 1500, "appraiser - 5 tickers-60T-1-MIN-1TPS"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-4-T-1-MIN-1TC15SEG"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-30-T-1-MIN-1TC2SEG"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-8-T-1-MIN-1TC7.5SEG"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser-5-tickers-dinamico"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-90T-1-MIN-1.5TPS"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.0, 500, 1500, "appraiser - 5 tickers-60T-1-MIN-1TPS"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-4-T-1-MIN-1TC15SEG"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-8-T-1-MIN-1TC7.5SEG"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-30-T-1-MIN-1TC2SEG"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser-5-tickers-dinamico"], "isController": false}, {"data": [0.0, 500, 1500, "appraiser - 5 tickers-90T-1-MIN-1.5TPS"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 252, 33, 13.095238095238095, 56009.34126984133, 4162, 100136, 59788.5, 100053.7, 100064.7, 100089.47, 0.43032492947452544, 1.4128358151370208, 0.47145333866828093], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["appraiser - 5 tickers-60T-1-MIN-1TPS", 60, 0, 0.0, 49472.35000000001, 4991, 92748, 60514.5, 77157.1, 87917.0, 92748.0, 0.4839802536056529, 1.7841572845077922, 0.5302986763140064], "isController": false}, {"data": ["appraiser - 5 tickers-4-T-1-MIN-1TC15SEG", 4, 0, 0.0, 9130.25, 4528, 11646, 10173.5, 11646.0, 11646.0, 11646.0, 0.07360111873700481, 0.2712963112039303, 0.08064497580363221], "isController": false}, {"data": ["appraiser - 5 tickers-30-T-1-MIN-1TC2SEG", 30, 0, 0.0, 9144.73333333333, 4162, 47196, 5886.5, 22434.400000000023, 40719.19999999999, 47196.0, 0.4569826955885937, 1.6836361161040703, 0.5007173676273459], "isController": false}, {"data": ["appraiser - 5 tickers-8-T-1-MIN-1TC7.5SEG", 8, 0, 0.0, 6349.499999999999, 4429, 10315, 4938.5, 10315.0, 10315.0, 10315.0, 0.13928304054877516, 0.5131131446193221, 0.15261286278879468], "isController": false}, {"data": ["appraiser-5-tickers-dinamico", 60, 2, 3.3333333333333335, 61562.61666666667, 8102, 100087, 55095.5, 96839.2, 99388.2, 100087.0, 0.4627522964082709, 1.5832169021240332, 0.5067905886787651], "isController": false}, {"data": ["appraiser - 5 tickers-90T-1-MIN-1.5TPS", 90, 31, 34.44444444444444, 78784.41111111111, 12406, 100136, 87372.5, 100067.9, 100075.45, 100136.0, 0.5866020100895546, 1.6043908688064605, 0.6427416555864065], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 252, 0, 0.0, 28536.45634920634, 3499, 97162, 15753.5, 70074.6, 75970.09999999999, 85649.45999999999, 0.5555261626368976, 1.9819703894359644, 0.6086228627674021], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["appraiser - 5 tickers-60T-1-MIN-1TPS", 60, 0, 0.0, 24411.100000000002, 5170, 70865, 18723.0, 52152.799999999996, 59669.04999999999, 70865.0, 0.7605141075366948, 2.728455764221614, 0.8332976842345425], "isController": false}, {"data": ["appraiser - 5 tickers-4-T-1-MIN-1TC15SEG", 4, 0, 0.0, 9159.25, 7657, 11294, 8843.0, 11294.0, 11294.0, 11294.0, 0.07468120460783033, 0.2675651068407983, 0.08182842926756409], "isController": false}, {"data": ["appraiser - 5 tickers-8-T-1-MIN-1TC7.5SEG", 8, 0, 0.0, 11520.874999999998, 5733, 20968, 9504.0, 20968.0, 20968.0, 20968.0, 0.13626762962458266, 0.4886638373390339, 0.14930886761599782], "isController": false}, {"data": ["appraiser - 5 tickers-30-T-1-MIN-1TC2SEG", 30, 0, 0.0, 9500.733333333335, 5555, 16396, 9044.5, 14748.700000000003, 15699.699999999999, 16396.0, 0.4386221416457103, 1.5734284305734254, 0.4805996512953974], "isController": false}, {"data": ["appraiser-5-tickers-dinamico", 60, 0, 0.0, 7757.249999999999, 3499, 32205, 6486.0, 12645.6, 16971.049999999996, 32205.0, 0.9517766497461929, 3.3345798550523478, 1.0423689324238579], "isController": false}, {"data": ["appraiser - 5 tickers-90T-1-MIN-1.5TPS", 90, 0, 0.0, 53858.44444444445, 7091, 97162, 56184.0, 79040.80000000002, 81946.70000000001, 97162.0, 0.6926593501316052, 2.4855918437437468, 0.7589490144996691], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["524", 33, 100.0, 13.095238095238095], "isController": false}]}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": []}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 252, 33, "524", 33, "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": ["appraiser-5-tickers-dinamico", 60, 2, "524", 2, "", "", "", "", "", "", "", ""], "isController": false}, {"data": ["appraiser - 5 tickers-90T-1-MIN-1.5TPS", 90, 31, "524", 31, "", "", "", "", "", "", "", ""], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 252, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
